@@ -1,3 +1,4 @@
+#本插件由deepseek生成
 # DSH Group Collaboration（DSH 群组协作插件）
 
 一个 [DeepSeek Harness（DSH）](https://github.com/deepseek-ai/deepseek-harness) Host 插件：让多个工作区 / 多个 DSH 实例通过「房间号 + 密码」组成群组，在聊天框里加入房间、上传与同步共享文件夹、查看备份和 readme。
