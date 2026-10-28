@@ -49,30 +49,6 @@ plugin_manager install_bundle target = <仓库路径>/group-collab
 
 > ⚠️ DSH 运行数据不要上传：工作区里的 `.dsh-group/`（含明文房间密码）、`own/`、`shared/`、`backup/`（共享内容与明文历史）已被 `.gitignore` 排除；若用 GitHub 网页上传，请上传 `github-upload/` 目录中的内容（见下）。
 
-## 直接上传到 GitHub
-
-本仓库根目录是可直接 `git init` / 上传的源码目录。为了让 GitHub 网页“拖拽上传”不会带上本地运行数据，提供了生成干净快照的脚本：
-
-```bash
-# 在仓库根目录运行（Node ≥ 22）
-node scripts/export-github.mjs
-# 生成的 github-upload/ 内容即可直接拖到 GitHub: Add file → Upload files
-```
-
-`github-upload/` 只包含：插件源码与测试、文档、LICENSE、`.gitignore`、`.github/workflows/tests.yml`；不包含任何 `.dsh-group`/own/shared/backup/房源数据。脚本会做敏感信息扫描，发现已知本地密码或运行态文件会中止。
-
-使用 git 的方式（推荐，可保留 `.github/` 等隐藏文件）：
-
-```bash
-git init
-git add .
-git commit -m "feat: DSH group collaboration plugin v2"
-git branch -M main
-git remote add origin https://github.com/<你的账号>/<仓库名>.git
-git push -u origin main
-```
-
-GitHub Actions 会按 `.github/workflows/tests.yml` 在 Ubuntu/Windows + Node 24 上运行全部测试。
 
 ## 测试
 
