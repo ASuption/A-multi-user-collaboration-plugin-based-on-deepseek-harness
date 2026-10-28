@@ -1,0 +1,39 @@
+{
+  "name": "@local/dsh-group-collab",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "DSH 群组协作插件：房间号+密码挑战应答认证、共享文件夹端到端加密同步、备份版本与 readme 自动维护",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "collaboration",
+    "shared-folder",
+    "end-to-end-encryption"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./lib/*.js": "./lib/*.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

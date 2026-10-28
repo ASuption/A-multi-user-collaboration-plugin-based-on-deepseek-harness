@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Group Collaboration">
+  <defs>
+    <linearGradient id="gc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6fed"/>
+      <stop offset="1" stop-color="#7a3ff2"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#gc-bg)"/>
+  <path d="M15 24.5 27 17l12 7.5-12 7.5-12-7.5Z" fill="#ffffff" opacity="0.95"/>
+  <path d="M15 32.5 27 40l12-7.5v6.3L27 46.3l-12-7.5v-6.3Z" fill="#ffffff" opacity="0.72"/>
+  <circle cx="24" cy="20" r="3.4" fill="#2f6fed"/>
+  <circle cx="33" cy="24.5" r="2.6" fill="#7a3ff2"/>
+  <circle cx="45" cy="43" r="6.4" fill="#ffffff" opacity="0.92"/>
+  <circle cx="54" cy="35" r="4.2" fill="#ffffff" opacity="0.72"/>
+  <path d="M33.5 46.5c1.6-3.4 5-5.2 8.6-4.4 2.4.5 4.3 2.2 5.4 4.4" stroke="#2f6fed" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>

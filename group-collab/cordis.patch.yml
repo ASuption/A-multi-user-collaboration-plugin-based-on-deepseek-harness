@@ -1,0 +1,12 @@
+# DSH Group Collaboration bundle patch.
+# Registers the Host plugin row. Config values are the product defaults; users can
+# override them in the profile's cordis.patch.yml with an `id: group-collab` entry.
+- insert:
+    - id: group-collab
+      name: '@local/dsh-group-collab'
+      config:
+        pollMs: 2500
+        autoExplain: true
+        goalMode: auto
+        rememberPassword: true
+        keepVersions: 50
